@@ -1,0 +1,59 @@
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.max-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.my-1 {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.text-color {
+    color: #2b39af
+}
+
+.f-d {
+    font-weight: bolder;
+    font-family: cursive;
+}
+
+.font-cursive {
+    font-family: cursive;
+}
+
+.overflow-hidden {
+    overflow-x: hidden;
+}
+
+.text-center {
+    text-align: center;
+}

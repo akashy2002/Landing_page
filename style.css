@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+
+}
+
+.burger {
+    display: none;
+}
+
+.btn {
+    padding: 4px 12px;
+    border: 2px solid black;
+    color: white;
+    background-color: #2b39af;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.container {
+    max-width: 80vw;
+}
+
+.navbar {
+    display: flex;
+    height: 67px;
+    transition: 0.5s;
+}
+
+.navbar li {
+    list-style: none;
+    font-family: cursive;
+    cursor: pointer;
+    margin: 0 12px;
+}
+
+.navbar li:hover {
+    color: #2b39af;
+    ;
+}
+
+.topleft {
+    width: 50%;
+}
+
+.topright {
+    width: 50%;
+}
+
+.topleft img {
+    width: 100px;
+}
+
+.topright img {
+    width: 250px;
+}
+
+.section1 h1 {
+    font-size: 3rem;
+    /* color: #b2795d; */
+}
+
+.section1 p {
+    font-family: sans-serif;
+}
+
+.section2 {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 70px;
+}
+
+.section2 p {
+    font-family: sans-serif;
+    padding: 0 15vw;
+    text-align: center;
+}
+
+.section2 h1 {
+    font-size: 4.5rem;
+}
+
+.box {
+    margin: 12px 20px;
+    min-width: 20vw;
+    border: 3px solid gray;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.box h2 {
+    font-size: 3rem;
+    font-variant: small-caps;
+    padding: 13px 0;
+
+}
+
+.box ul {
+    list-style: none;
+}
+
+.box ul li {
+    margin: 12px 2px;
+}
+
+.plantable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 table {
+    width: 100%;
+    margin-bottom: 140px;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+.size {
+    font-size: 2.1rem;
+}
+
+.section3 table th {
+    width: 25vw;
+    border-bottom: 2px solid black;
+    padding: 13px 0;
+}
+
+.section3 table td {
+    border-bottom: 2px solid black;
+
+}
+
+.section3 {
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.section3 h1 {
+    font-size: 4rem;
+
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 500;
+}
+
+.burger {
+    display: none;
+    /* position: absolute;
+    top: 90px; */
+}
+
+
+.lines {
+    background: black;
+    margin: 2px;
+    width: 40px;
+    height: 3px;
+    list-style: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: .3s ease-in-out;
+}
+
+.lines::before,
+.lines::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: black;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: .3s ease-in-out;
+}
+
+.lines::before {
+    transform: translateY(-10px);
+}
+
+.lines::after {
+    transform: translateY(10px);
+
+}
+
+.burger.open .lines {
+    transform: translateY(-2px);
+    transform: translateX(-17px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.burger.open .lines::before {
+    transform: rotate(45deg) translate(10px, -10px);
+}
+
+.burger.open .lines::after {
+    transform: rotate(-45deg) translate(10px, 10px);
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .burger {
+        position: fixed;
+        top: 2rem;
+        left: 28.6rem;
+        display: block;
+    }
+
+    nav {
+        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* height: 68vw; */
+
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .ul-box {
+        display: none;
+        background: grey;
+        position: absolute;
+        height: 55vw;
+        width: 100%;
+        top: 60px;
+        transition: .5s ease-in-out;
+    }
+
+    .show {
+        display: block;
+
+    }
+
+    .navbar li {
+        color: white;
+        margin: 12px;
+    }
+
+    /* .section1 {} */
+
+    .colume {
+        flex-direction: column;
+    }
+
+    .section2 P {
+        /* min-width: 70vh; */
+    }
+
+    .boxes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section3 table {
+        min-width: 35vh;
+    }
+
+    .box h2 {
+        font-size: 2rem;
+    }
+
+    .section3 h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .burger {
+        position: fixed;
+        top: 2rem;
+        left: 28rem;
+        display: block;
+    }
+
+
+}
+
+
+@media screen and (max-width: 490px) {
+    .burger {
+        position: fixed;
+        top: 2rem;
+        left: 20rem;
+        display: block;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+    .burger {
+        position: fixed;
+        top: 2rem;
+        left: 18rem;
+        display: block;
+    }
+
+
+}
+
+@media screen and (max-width: 360px) {
+    .burger {
+        position: fixed;
+        top: 2rem;
+        left: 18rem;
+        display: block;
+    }
+
+
+}
